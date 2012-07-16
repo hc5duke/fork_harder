@@ -1,0 +1,14 @@
+{
+  "name": "Fork Harder",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["replace.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
